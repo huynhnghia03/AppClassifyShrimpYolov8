@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myyolov8app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_classification"
+        android:name="com.example.myyolov8app.ui.classification.ClassificationFragment"
+        android:label="@string/menu_classification"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_classification" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_changePass"
+        android:label="@string/menu_changePass"
+        tools:layout="@layout/fragment_changepass" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:label="@string/menu_info"
+        tools:layout="@layout/activity_info_classofication" />
+    <fragment
+        android:id="@+id/nav_alluser"
+        android:label="@string/menu_alluser"
+        tools:layout="@layout/fragment_all_users" />
+
+
+
+</navigation>
